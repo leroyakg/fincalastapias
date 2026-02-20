@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Finca Las Tapias | Coffee Estate-to-Cup Honduran Coffee</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#cf7317",
+            "background-light": "#f8f7f6",
+            "background-dark": "#211911",
+            "coffee-neutral": {
+              50: "#fdfcfb",
+              100: "#f7f3f0",
+              200: "#eee3da",
+              300: "#dec9b8",
+              400: "#c7a58b",
+              500: "#b38666",
+              600: "#a17051",
+              700: "#865c44",
+              800: "#6d4c3a",
+              900: "#5a4032",
+            }
+          },
+          fontFamily: {
+            "display": ["Work Sans"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-coffee-neutral-900 dark:text-coffee-neutral-100 font-display">
+  <nav
+    class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-coffee-neutral-200 dark:border-coffee-neutral-800">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-8">
+          <a class="text-2xl font-bold tracking-tighter text-primary" href="#">Finca Las Tapias</a>
+          <!-- <div class="hidden md:flex items-center gap-6">
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#specialty">Specialty Series</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#classic">Classic Series</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#story">Our Story</a>
+            <a class="text-sm font-medium hover:text-primary transition-colors" href="#wholesale">Wholesale</a>
+          </div> -->
+        </div>
+        <div class="flex items-center gap-4">
+          <!-- <button class="p-2 text-coffee-neutral-600 dark:text-coffee-neutral-400 hover:text-primary transition-colors">
+            <span class="material-icons">search</span>
+          </button> -->
+          <a href="#contactUs"
+            class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all shadow-sm">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img alt="Landscape of Finca Las Tapias coffee estate" class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC5Gs9NFWO6w7OZsIXBsM2VVXheFT5FnSRM6y2aOAIimoetw9wnZoUshm2CQksCRaYe3M-ic6yDGPZlb0vdML01szOhicta_PbwSjFPTAPBbXpfpNSlndkpJ3kV0V1dH5_LyN8Tm_R9736pXZBBgh_QTliuQqLYRG6ixtd-dpCmSZt9buO6Nv6Ap5FElHfGhv7HaKJV7CvkJc8eZnHrHS_Dnv3CNLk6pZikH5Ixl7bGS-cCCzd5333wyCemBff5gQMbpbDzN49OWL_" />
+      <div class="absolute inset-0 bg-gradient-to-r from-background-dark/80 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
+      <div class="max-w-2xl text-white">
+        <span
+          class="inline-block py-1 px-3 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded text-xs font-bold uppercase tracking-widest mb-6">Vertically
+          Integrated</span>
+        <h1 class="text-5xl lg:text-7xl font-bold leading-tight mb-6">
+          Café Brix: Coffee Estate-Grown Coffee from Finca Las Tapias
+        </h1>
+        <p class="text-lg lg:text-xl text-coffee-neutral-200 mb-10 font-light leading-relaxed">
+          Cultivating excellence in the heart of Siguatepeque, Honduras. From our family-owned coffee estate directly to
+          your
+          daily ritual.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-center hover:scale-[1.02] transition-transform"
+            href="#specialty">Explore Specialty</a>
+          <a class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-center hover:bg-white/20 transition-all"
+            href="#origin">Discover Our Origin</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-white dark:bg-background-dark/50" id="origin">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">The Roots of Quality</h2>
+          <p class="text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-8 text-lg">
+            Finca Las Tapias is more than just a coffee estate; it's a multi-generational commitment to the land and the
+            bean.
+            Located in the high-altitude cloud forests of Siguatepeque, our unique microclimate produces beans of
+            exceptional character.
+          </p>
+          <div class="grid grid-cols-2 gap-8">
+            <div
+              class="p-6 bg-background-light dark:bg-background-dark border border-coffee-neutral-200 dark:border-coffee-neutral-800 rounded-xl">
+              <span class="material-icons text-primary mb-3">terrain</span>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-coffee-neutral-500 mb-1">Elevation</h4>
+              <p class="text-2xl font-bold">1,150m - 1,250m</p>
+            </div>
+            <div
+              class="p-6 bg-background-light dark:bg-background-dark border border-coffee-neutral-200 dark:border-coffee-neutral-800 rounded-xl">
+              <span class="material-icons text-primary mb-3">eco</span>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-coffee-neutral-500 mb-1">Varieties</h4>
+              <p class="text-2xl font-bold">Parainema, Bourbon, Geicha</p>
+            </div>
+            <div
+              class="p-6 bg-background-light dark:bg-background-dark border border-coffee-neutral-200 dark:border-coffee-neutral-800 rounded-xl">
+              <span class="material-icons text-primary mb-3">calendar_today</span>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-coffee-neutral-500 mb-1">Harvest</h4>
+              <p class="text-2xl font-bold">Dec — March</p>
+            </div>
+            <div
+              class="p-6 bg-background-light dark:bg-background-dark border border-coffee-neutral-200 dark:border-coffee-neutral-800 rounded-xl">
+              <span class="material-icons text-primary mb-3">water_drop</span>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-coffee-neutral-500 mb-1">Process</h4>
+              <p class="text-2xl font-bold">Washed &amp; Natural</p>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <img alt="Freshly harvested coffee cherries" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTYnEixdK5p9izK4IesVPVPj1vey_tL5mg2qp82Y9zHXp0NyZiE5ExGFTIcnKHrdSFoWt8jsRMVBEYE7zKo23VTWau6EySZdOsCs-x720mBY-DnJCh9a1QHSiJRoPX0aHcdcfEb1_iEAqatpSZuEucgzztRe3h12xRQsWz0880xPiphYrfZS_tWAOQL8Vg4D3G_5j8do0vHA7-pfdhr0IqwVWJQc5lLZD6JWaB4o6kDY0sxY_EghQssiU_-UnCuZfvt1gfT5czS_J8" />
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-primary text-white p-8 rounded-xl hidden md:block">
+            <p class="text-4xl font-bold">88+</p>
+            <p class="text-sm uppercase font-semibold tracking-tighter opacity-80">SCA Cup Score Average</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-background-light dark:bg-background-dark">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Our Coffee Series</h2>
+        <p class="text-coffee-neutral-600 dark:text-coffee-neutral-400 max-w-2xl mx-auto">
+          Whether you're looking for an adventurous complex brew or a comforting daily cup, we've refined our harvest
+          into two distinct collections.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div
+          class="group relative bg-white dark:bg-coffee-neutral-900 rounded-2xl overflow-hidden border border-coffee-neutral-200 dark:border-coffee-neutral-800 shadow-sm hover:shadow-xl transition-all duration-500"
+          id="specialty">
+          <div class="h-80 overflow-hidden relative">
+            <img alt="Specialty Coffee"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCzlzgNz9N3PKvLGEwlC2CjWE9Ww9EJAtcnZMOWBc24cZVw0b3iXFA2cR4Gf7T39lniUp6vPfMRTqCIOM65uRk9Lk4myhgD6lmE_PiOkqNKK07s4kkzxkWjAEK-esDQ8dnI_6OF0e7ZCf2F0yUhP8WfuNPx3R7NC-EEW34j26GDyKgnzWUferRrCJzr-cDzOo2FFwj3c-435yA61eLB40GTPmdpQJToQ9p-gAh6MgyHY0gHt_MggvW5_k_u5cW3yoIfw42HSOglQVK" />
+            <div class="absolute top-6 left-6">
+              <span
+                class="bg-primary/90 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Premium
+                Selection</span>
+            </div>
+          </div>
+          <div class="p-10">
+            <h3 class="text-3xl font-bold mb-4">Specialty Series</h3>
+            <p class="text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-8 leading-relaxed">
+              For the discerning palate. Our Specialty Series features small-lot microlots, unique fermentations, and
+              the highest cupping scores from Finca Las Tapias.
+            </p>
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-primary text-sm">stars</span>
+                <span class="text-sm font-medium">Complex Flavor Profiles</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-primary text-sm">stars</span>
+                <span class="text-sm font-medium">Limited Seasonal Microlots</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-primary text-sm">stars</span>
+                <span class="text-sm font-medium">Detailed Traceability Reports</span>
+              </li>
+            </ul>
+            <button
+              class="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white py-4 rounded-xl font-bold transition-all">
+              View Specialty Collection
+            </button>
+          </div>
+        </div>
+        <div
+          class="group relative bg-white dark:bg-coffee-neutral-900 rounded-2xl overflow-hidden border border-coffee-neutral-200 dark:border-coffee-neutral-800 shadow-sm hover:shadow-xl transition-all duration-500"
+          id="classic">
+          <div class="h-80 overflow-hidden relative">
+            <img alt="Classic Coffee"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYiCTMDocy-s8DPxvgdteSwDa6ipsOAaYJbaNAf0ap1Gb_rb6yF1X6mebmeqRPKGbdvRlkF4RLWt_4fRg8Eunesg2plXaCIOstnPML6scTqcYHShHJhyWIyONdfUK1fllotoKpiG-BPBZyTeUEIXKCQuj2psy0lxt3-EtN5vZaiRpOBEmSRwG5eMCkS-cM7R-BMgLMT03P-ipVOgFpXTce4vWEUdnsEcK1G_gwTyawoiHPm782cIuq4ZC8im8wb_An-z9Ak5jHIzA7" />
+            <div class="absolute top-6 left-6">
+              <span
+                class="bg-coffee-neutral-800 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Daily
+                Ritual</span>
+            </div>
+          </div>
+          <div class="p-10">
+            <h3 class="text-3xl font-bold mb-4">Classic Series</h3>
+            <p class="text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-8 leading-relaxed">
+              The heart of Honduran tradition. Reliable, full-bodied, and perfectly balanced for your daily brew,
+              whether espresso or drip.
+            </p>
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-coffee-neutral-500 text-sm">check_circle</span>
+                <span class="text-sm font-medium">Consistent Flavor Profiles</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-coffee-neutral-500 text-sm">check_circle</span>
+                <span class="text-sm font-medium">Rich Chocolatey &amp; Nutty Notes</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="material-icons text-coffee-neutral-500 text-sm">check_circle</span>
+                <span class="text-sm font-medium">Versatile Roast Profiles</span>
+              </li>
+            </ul>
+            <button
+              class="w-full bg-coffee-neutral-800 text-white hover:bg-coffee-neutral-900 py-4 rounded-xl font-bold transition-all">
+              View Classic Collection
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 border-t border-coffee-neutral-200 dark:border-coffee-neutral-800 overflow-hidden" id="story">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="w-full lg:w-1/2 relative">
+          <div class="relative z-10 rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl">
+            <img alt="The Brix Family at Finca Las Tapias" class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR7ZO58CI_D9LNKFmA75ah_VSbtJJUA5Pqxu-B764mN38BCe3uo9whA7houCG2jG58N2WfYeTIQAf7rmMeJahPNf0acp_huagHJ0U2JXYLSDKF6smP3IVTOEiiV35B6JCyoo58Z2froi-LpRKoE0y_4AW4NN4z4A8nKj2v1IwfQNAw7XbNS9FmGuVTeiqJN2ZHhLDC33Lw64Y5VnOm4v6xd3YBKbqwInE4xvDMLeYkYQap2ihL1QBReR3WftfzVC9WVdY-s6_McyPK" />
+          </div>
+          <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-coffee-neutral-500/10 rounded-full blur-3xl -z-10">
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <h2 class="text-4xl font-bold mb-6">A Legacy of Vertically Integrated Excellence</h2>
+          <p class="text-lg text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-6 leading-relaxed">
+            At Café Brix, we don't just buy coffee; we grow it. By owning every step of the process—from the selection
+            of seeds at our coffee estate, Finca Las Tapias, to the final roast—we ensure absolute transparency and
+            quality.
+          </p>
+          <p class="text-lg text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-8 leading-relaxed">
+            Our family has been stewarding this land for decades, learning the nuances of the Siguatepeque terrain to
+            bring you a product that honors its origin and the people who nurture it.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-8">
+            <div>
+              <p class="text-4xl font-bold text-primary">100%</p>
+              <p class="text-sm font-semibold uppercase tracking-widest text-coffee-neutral-500">Traceable</p>
+            </div>
+            <div class="h-px sm:h-auto sm:w-px bg-coffee-neutral-200 dark:bg-coffee-neutral-800"></div>
+            <div>
+              <p class="text-4xl font-bold text-primary">Direct</p>
+              <p class="text-sm font-semibold uppercase tracking-widest text-coffee-neutral-500">Trade</p>
+            </div>
+            <div class="h-px sm:h-auto sm:w-px bg-coffee-neutral-200 dark:bg-coffee-neutral-800"></div>
+            <div>
+              <p class="text-4xl font-bold text-primary">Coffee Estate</p>
+              <p class="text-sm font-semibold uppercase tracking-widest text-coffee-neutral-500">Owned</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-primary/5 dark:bg-primary/10" id="wholesale">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <div class="max-w-3xl mx-auto">
+        <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">B2B Partnerships</span>
+        <h2 class="text-4xl font-bold mb-6">Partner with Finca Las Tapias</h2>
+        <p class="text-lg text-coffee-neutral-600 dark:text-coffee-neutral-400 mb-10">
+          Are you a café owner or roaster looking for consistent, high-quality Honduran green or roasted beans? Let's
+          discuss a direct-trade partnership tailored to your needs.
+        </p>
+        <button
+          class="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+          Inquire About Wholesale
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="h-[500px] w-full relative">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d831.830656183746!2d-87.8214157590561!3d14.539905829293915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6597001f8a05cb%3A0x6bc0e2c00ef01337!2sFinca%20Las%20Tapias!5e0!3m2!1sen!2shn!4v1771540535609!5m2!1sen!2shn"
+      height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
+      style="border:0; filter: grayscale(40%) contrast(110%);">
+    </iframe>
+    <div
+      class="absolute bottom-6 left-6 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md p-4 rounded-lg shadow-xl border border-coffee-neutral-200 dark:border-coffee-neutral-800 max-w-xs pointer-events-none">
+      <h5 class="font-bold text-primary mb-1">Our Location</h5>
+      <p class="text-xs text-coffee-neutral-600 dark:text-coffee-neutral-400">Siguatepeque, Comayagua, Honduras. Visit
+        Finca Las Tapias in the heart of the Central Highlands.</p>
+    </div>
+  </section>
+  <footer class="bg-background-dark text-white py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+        <div class="lg:col-span-6 flex flex-col justify-center">
+          <a class="text-3xl font-bold tracking-tighter text-primary mb-8 block" href="#">CAFÉ BRIX</a>
+          <p class="text-coffee-neutral-300 text-lg leading-relaxed mb-10 max-w-xl">
+            From the slopes of Finca Las Tapias to coffee lovers worldwide. Vertically integrated, family-grown,
+            Honduran specialty coffee committed to absolute excellence in every bean.
+          </p>
+          <div class="flex gap-6">
+            <a aria-label="Facebook"
+              class="w-12 h-12 rounded-full border border-coffee-neutral-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group"
+              href="#">
+              <svg class="w-6 h-6 fill-coffee-neutral-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z">
+                </path>
+              </svg>
+            </a>
+            <a aria-label="Instagram"
+              class="w-12 h-12 rounded-full border border-coffee-neutral-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group"
+              href="https://www.instagram.com/fincalastapiashn/">
+              <svg class="w-6 h-6 fill-coffee-neutral-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                </path>
+              </svg>
+            </a>
+            <a aria-label="WhatsApp"
+              class="w-12 h-12 rounded-full border border-coffee-neutral-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group"
+              href="https://wa.me/+50496426352">
+              <svg class="w-6 h-6 fill-coffee-neutral-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.246 2.248 3.484 5.232 3.484 8.412-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.309 1.656zm6.224-3.82c1.516.903 3.184 1.384 4.895 1.385 5.367 0 9.735-4.367 9.738-9.733.001-2.6-.1012-5.044-2.845-6.887-1.832-1.842-4.27-2.859-6.87-2.859-5.366 0-9.735 4.368-9.738 9.734-.001 2.105.55 4.154 1.594 5.928l-.1003.356-.664 2.416 2.472-.647.321-.19zM17.15 14.54c-.269-.135-1.593-.786-1.841-.876-.247-.09-.427-.135-.607.135-.18.271-.696.876-.853 1.056-.157.181-.314.203-.583.068-.269-.135-1.137-.419-2.164-1.336-.801-.714-1.341-1.596-1.498-1.867-.157-.27-.017-.417.118-.552.121-.122.269-.315.403-.473.135-.158.18-.27.27-.451.09-.18.045-.338-.022-.473-.068-.135-.607-1.464-.831-2.005-.219-.527-.439-.454-.607-.463l-.517-.009c-.18 0-.473.068-.72.338-.247.271-.945.924-.945 2.254s.967 2.615 1.102 2.795c.135.18 1.903 2.906 4.609 4.074.643.278 1.146.444 1.538.568.646.205 1.233.176 1.698.106.518-.078 1.593-.652 1.819-1.283.225-.632.225-1.173.158-1.283-.068-.11-.247-.179-.516-.314z">
+                </path>
+              </svg>
+            </a>
+            <a aria-label="Email"
+              class="w-12 h-12 rounded-full border border-coffee-neutral-700 flex items-center justify-center hover:bg-primary hover:border-primary transition-all group"
+              href="mailto:info@fincalastapias.com">
+              <svg class="w-6 h-6 fill-coffee-neutral-400 group-hover:fill-white transition-colors" viewBox="0 0 24 24">
+                <path
+                  d="M12 12.713l-11.99-7.713v13.999c0 .552.448 1 1 1h22c.552 0 1-.448 1-1v-13.999l-11.99 7.713zm11.99-9.713h-22c-.552 0-1 .448-1 1v.511l11 7.086 11-7.086v-.511c0-.552-.448-1-1-1z">
+                </path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div id="contactUs" class="lg:col-span-6">
+          <!-- <div>
+            <h4 class="font-bold text-2xl mb-4">Contact Us</h4>
+            <p class="text-coffee-neutral-400 mb-8">Have questions about our seasonal harvests or wholesale
+              partnerships? Send our family a message directly.</p>
+            <form class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  class="w-full bg-coffee-neutral-800 border-none rounded-lg px-5 py-4 text-base focus:ring-2 focus:ring-primary text-white placeholder-coffee-neutral-500"
+                  placeholder="Your Name" required="" type="text" />
+                <input
+                  class="w-full bg-coffee-neutral-800 border-none rounded-lg px-5 py-4 text-base focus:ring-2 focus:ring-primary text-white placeholder-coffee-neutral-500"
+                  placeholder="Email Address" required="" type="email" />
+              </div>
+              <textarea
+                class="w-full bg-coffee-neutral-800 border-none rounded-lg px-5 py-4 text-base focus:ring-2 focus:ring-primary text-white placeholder-coffee-neutral-500 min-h-[120px]"
+                placeholder="How can we help you?" required=""></textarea>
+              <button
+                class="w-full bg-primary text-white py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                Send Message
+              </button>
+            </form>
+          </div> -->
+        </div>
+      </div>
+      <div
+        class="pt-10 border-t border-coffee-neutral-800 flex flex-col md:flex-row justify-between items-center gap-6 text-coffee-neutral-500 text-sm">
+        <p>© 2026 Finca Las Tapias. All Rights Reserved. Siguatepeque, Comayagua, Honduras.</p>
+        <div class="flex gap-8">
+          <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+          <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
